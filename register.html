@@ -29,8 +29,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
-    
+    <link href="css/register.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -92,155 +92,95 @@
         <!-- Navbar End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid header bg-white p-0 header_section">
-            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-                <!-- <div class="col-md-12 w-auto animated fadeIn">
-                    <img class="img-fluid" src="img/header.jpg" alt="">
-                </div> -->
-                <div class="p-5 pt-lg-5 mt-lg-5 about_text">
-                    <h1 class="display-5 animated RRRR fadeIn mb-4">About Us</h1> 
-                    <nav aria-label="breadcrumb animated fadeIn">
-                        <ol class="breadcrumb text-uppercase RRRR">
-                            <li class="breadcrumb-item RRRR"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-body active" aria-current="page">About</li>
-                        </ol>
-                    </nav>
-                </div>
-                
+
+
+        <!-- New register section start -->
+        <div class="container register-section">
+            <div class="img_section col-md-4">
+                <img src="img/reg.png" alt="...">
+            </div>
+            <div class="col-md-6 form_body">
+                <form class="well " action="" method="post" id="contact_form" onsubmit="handleRegistration(event)">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend id="rrrrrrr">Create your Account</legend>
+            
+                        <!-- Username input -->
+                        <p id="error" class="danger-error"></p>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Username</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input id="Username" name="name" placeholder="" required class="form-control" type="username" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- First Name input -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">First Name</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input id="First_name" name="first_name" placeholder="" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Last Name input -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Last Name</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input id="Last_name" name="last_name" placeholder="" class="form-control" type="last_name" required>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Email input -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Email</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input id="Email_address" name="user_email" placeholder="" class="form-control" type="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Password</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input id="Password" name="user_password" placeholder="" class="form-control" type="password" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Password input -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Confirm Password</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input id="Confirm_password" name="user_password" placeholder="" class="form-control" type="password" required>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+            
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <div class="col-md-4"><br>
+                            <button type="submit" class="register_btn">Register</button>
+                                <!-- <input type="submit" class="submit-btn" value="Registration"/> -->
+                                                
+                                <p><a href="login.html">go to login page.</a></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
-        <!-- Header End -->
+        <!-- New register section end -->
 
 
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                            <img class="img-fluid w-100" src="img/about.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">#1 Place To Find The Perfect Property</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="detail.html">Read More.....</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Call to Action Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="bg-light rounded p-3">
-                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="mb-4">
-                                    <h1 class="mb-3">Contact With Our Certified Agent</h1>
-                                    <p>Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.</p>
-                                </div>
-                                <a href="contact.html" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Make A Call</a>
-                                <a href="contact.html" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Call to Action End -->
-
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Property Agents</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square mx-1" href="https://www.facebook.com/mdrasel.sarker.7773631"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-linkedin"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-whatsapp"></i></a>
-                                    
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Priti Jinta</h5>
-                                <small>Owner</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square mx-1" href="https://www.facebook.com/mdrasel.sarker.7773631"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-linkedin"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-whatsapp"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Rasel sarker</h5>
-                                <small>Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square mx-1" href="https://www.facebook.com/mdrasel.sarker.7773631"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-linkedin"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-whatsapp"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Alica vate</h5>
-                                <small>Seller</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square mx-1" href="https://www.facebook.com/mdrasel.sarker.7773631"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-linkedin"></i></a>
-                                    <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/rasel-sarker-405160227/"><i class="fab fa-whatsapp"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Gaill</h5>
-                                <small>Marketer</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
         
 
         <!-- Footer Start -->
@@ -304,7 +244,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Home-Rental</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">Home Rental</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom" href="https://htmlcodex.com">Rasel sarker</a>

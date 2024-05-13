@@ -1,0 +1,18 @@
+.header_section{
+    height: 600px;
+    width: 1250px;
+    padding-top: 50px !important;
+    background-image: url('/img/property-1.jpg') !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.about_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.RRRR{
+    color: rgb(243, 21, 5) !important;
+}
